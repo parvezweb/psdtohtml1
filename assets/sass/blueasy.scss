@@ -1,0 +1,271 @@
+
+body{
+	font-family: 'Raleway', sans-serif;
+
+}
+$theme_color:#4bcaff;
+$section_bg:#4a555c;
+$text_primary_color:#fff;
+$text_secondary_color:#dcdedf;
+$section_padding:60px 0px;
+header{
+	background-position: center;
+	background-size: cover;
+	background-image: url('assets/img/header_bg.jpg');
+	.header-top{
+		position: relative;
+		z-index: 1;
+		padding: 20px 0px;
+		&:after{
+			position:absolute;
+			background:$section_bg;
+			opacity: .6;
+			content: '';
+			width: 100%;
+			height: 100%;
+			left:0px;
+			top: 0px;
+			z-index: -1;
+
+
+		}
+	}
+	.logo{
+		margin-top: 10px;
+	}
+	.logo h2{
+		color:$text_primary_color;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 700;
+		span{
+			color:$theme_color;
+		}
+	}
+
+	nav{
+		ul{
+			li{
+				a{
+					color:$text_primary_color;
+					text-transform: uppercase;
+					border:1px solid transparent;
+					margin-left:10px;
+					font-weight: 500;
+					font-size: 14px;
+					&:hover{
+						border:1px solid $theme_color;
+						color: $theme_color;
+					}
+				}
+			}
+		}
+	}
+
+
+	.slogan-text{
+		width: 80%;
+		margin:200px auto;
+		h2{
+			color: $text_primary_color;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: 300;
+			
+			span{
+					background: $section_bg;
+				    font-size: 30px;
+				    padding: 2px 15px;
+				    margin-top: 10px;
+				    display: inline-block;
+			}
+		}
+	}
+}
+
+
+/* Service Area Start */
+.section-title h2{
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 30px;
+	position: relative;
+	margin-bottom: 30px;
+	&:after{
+		position:absolute;
+		content: '';
+		width: 50px;
+		height: 2px;
+		background: $text_primary_color;
+		left: 0px;
+		bottom: 0px;
+
+	}
+}
+.service{
+	padding:$section_padding;
+	background:$theme_color;
+	color: $text_primary_color;
+	h3{
+		margin-top:15px;
+		font-weight: 700px;
+		font-size: 24px;
+	}
+	p{
+		font-size: 12px;
+	}
+}
+
+/*  Portfolio style start */
+.portfolio{
+	padding:$section_padding;
+	.section-title{
+		h2{
+				&:after{
+					
+					background: $section_bg;
+					
+
+				}
+		}
+	}
+	
+
+
+
+.portfolio-image{
+	background:#ccc;
+	width: 100%;
+	margin-top:20px;
+	height: 230px;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	&:hover .portfolio-hover{
+		display:block;
+
+	}
+	.portfolio-hover{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		z-index: 1;
+		display: none;
+		&:before{
+			position:absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background: #000;
+			opacity: .5;
+			content: '';
+			z-index: -1;
+		}
+		i{
+			color: $text_primary_color;
+			margin-top: 45%;
+		}
+	}
+}
+.port-bg1{
+	background-image: url('assets/img/portfolio1.png');
+}
+.port-bg2{
+	background-image: url('assets/img/portfolio2.png');
+}
+.port-bg3{
+	background-image: url('assets/img/portfolio1.png');
+}
+.port-bg4{
+	background-image: url('assets/img/portfolio2.png');
+}
+.port-bg5{
+	background-image: url('assets/img/portfolio1.png');
+}
+.port-bg6{
+	background-image: url('assets/img/portfolio2.png');
+}
+.port-bg7{
+	background-image: url('assets/img/portfolio1.png');
+}
+.port-bg8{
+	background-image: url('assets/img/portfolio2.png');
+}
+
+.filter_menu{
+	ul{
+		li{
+			a{
+				text-transform: uppercase;
+				color:$section_bg;
+				font-weight: 700;
+				font-size: 14px; 
+			}
+		}
+	}
+}
+
+}
+
+/*  Portfolio style End */
+
+/*  About us style start */
+.about-us{
+	padding: $section_padding;
+	background-image: url('assets/img/about_bg.jpg');
+	background-position: center;
+	background-size: cover;
+	color: $text_primary_color;
+	p{
+		font-size: 14px;
+	}
+
+	.social_icons{
+		ul{
+			margin: 0;
+			padding: 0;
+
+			li{
+				list-style: none;
+				display: inline-block;
+				margin-right: 20px;
+
+				a{
+					color: $text_primary_color;
+					font-size: 28px;
+					border:2px solid $text_primary_color;
+					padding: 5px 10px ;
+				}
+			}
+		}
+	}
+}
+
+/*  About us style End */
+
+/*  Contact style Start */
+.contact{
+	background-image: url('assets/img/contact_bg.jpg');
+	background-size: cover;
+	background-position: center;
+	padding:$section_padding;
+	color: $text_primary_color;
+	address{
+		margin-top: 20px;
+	}
+	p{
+		font-size: 14px;
+		margin-bottom: 3px;
+	}
+	label{
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	input,textarea{
+		background:transparent;
+		border-radius: 0px;
+	}
+}
+/*  Contact style End */
